@@ -8,7 +8,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Zend\Stdlib\ArrayUtils;
 use Zend\Mvc\Application as ZendApplication;
-use Console\Controller\Plugin\ConsoleParams;
+use Zf3SymfonyConsole\Controller\Plugin\ConsoleParams;
 use Application\Controller\IndexController;
 
 $appConfig = require __DIR__ . '/../config/application.config.php';
