@@ -1,0 +1,30 @@
+{
+    "name": "illchuk/zf3-symfony-console",
+    "description": "A simple way to extend your existing Zend Framework 3 app with a Symfony Console facet.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "zf3",
+        "console"
+    ],
+    "homepage": "https://github.com/dillchuk/Zf3SymfonyConsole",
+    "authors": [
+        {
+            "name": "Derek Illchuk",
+            "email": "derek@illchuk.com",
+            "homepage": "http://www.derekillchuk.com"
+        }
+    ],
+    "require": {
+        "php": "^5.4|^7.0",
+        "symfony/console": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zf3SymfonyConsole\\": "src/"
+        }
+    }
+}
