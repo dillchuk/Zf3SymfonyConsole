@@ -31,7 +31,7 @@ class ConsoleParams extends Params {
         return $this->input;
     }
 
-    public function setInput(InputInterface $input) {
+    public function setInput(InputInterface $input = null) {
         $this->input = $input;
     }
 
@@ -47,11 +47,30 @@ class ConsoleParams extends Params {
     }
 
     public function fromConsole($param = null, $default = null) {
+        if (!$this->input) {
+            return $default;
+        }
         $arguments = new Parameters($this->input->getArguments());
         if ($param === null) {
             return $arguments->toArray();
         }
         return $arguments->get($param, $default);
+    }
+
+    public function fromFiles($name = null, $default = null) {
+        return $default;
+    }
+
+    public function fromHeader($header = null, $default = null) {
+        return $default;
+    }
+
+    public function fromPost($param = null, $default = null) {
+        return $default;
+    }
+
+    public function fromQuery($param = null, $default = null) {
+        return $default;
     }
 
 }
